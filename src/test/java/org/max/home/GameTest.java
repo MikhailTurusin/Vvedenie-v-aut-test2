@@ -1,7 +1,9 @@
 package org.max.home;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -23,6 +25,11 @@ public class GameTest {
     }
 
     @Test
+    @DisplayName("GameTest")
+    @Description("")
+    @Link("")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Михаил")
     void checkNotRiskWin () {
         //given
         Player player = new Player("Игрок", false);
@@ -34,6 +41,11 @@ public class GameTest {
     }
 
     @Test
+    @DisplayName("GameTest")
+    @Description("")
+    @Link("")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Михаил")
     void checkNotRiskLose() {
         //given
         Player player = new Player("Игрок", false);
@@ -45,6 +57,11 @@ public class GameTest {
     }
 
     @Test
+    @DisplayName("GameTest")
+    @Description("")
+    @Link("")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Михаил")
     void checkRiskWin () {
         //given
         Player player = new Player("Игрок", true);
@@ -56,6 +73,11 @@ public class GameTest {
     }
 
     @Test
+    @DisplayName("GameTest")
+    @Description("")
+    @Link("")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Михаил")
     void checkRiskLose () {
         //given
         Player player = new Player("Игрок", true);
